@@ -675,10 +675,10 @@ color: var(--secondary-color);
   transition: opacity var(--duration) var(--cubic-bezier),
   transform var(--duration) var(--cubic-bezier)
 }
-.backdrop--is-hidden .modal {
+.backdrop--is-hidden .backdrop__modal {
   transform: translate(-50%, -50%) scale(0);
 }
-.modal {
+.backdrop__modal  {
 position: absolute;
 top: 50%;
 left: 50%;
@@ -693,7 +693,7 @@ transition: transform var(--duration) var(--cubic-bezier);
 }
 
 
-.backdrop-button {
+.backdrop__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -710,26 +710,26 @@ transition: transform var(--duration) var(--cubic-bezier);
   transition: fill var(--duration) var(--cubic-bezier);
   }
 
-.backdrop-button:hover,
-.backdrop-button:focus {
+.backdrop__button:hover,
+.backdrop__button:focus {
 fill: var(--accent-color);
   }
 
 
-  /* Form */
-.modal-text {
+  /* Form  modal*/
+  .form-modal {
+  display: block;
+  padding: 40px 39px 40px 41px;
+  text-align: center;
+}
+.form-modal__text {
 font-weight: bold;
 font-size: 20px;
 line-height: 1.15;
 margin-bottom: 12px;
 }
-.form-modal {
-  display: block;
-  padding: 40px 39px 40px 41px;
-  text-align: center;
 
-}
-.label-modal {
+.form-modal__label {
 position: relative;
 display: block;
 width: 100%;
@@ -741,11 +741,11 @@ color: var(--secondary-color);
 transition: fill var(--duration) var(--cubic-bezier);
 }
 
-.label-span {
+.form-modal__span {
   display: flex;
   margin-bottom: 4px;
 }
-.input-modal {
+.form-modal__input {
   display: block;
 width: 100%;
 padding: 12px 12px 12px 42px;
@@ -756,13 +756,13 @@ border-radius: 4px;
 transition: border var(--duration) var(--cubic-bezier);
 
 }
-.textarea-modal::placeholder {
+.form-modal__textarea::placeholder {
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: var(--placeholder);
 }
-.textarea-modal {
+.form-modal__textarea {
 display: block;
 padding: 12px 16px;
 margin-bottom: 20px;
@@ -773,32 +773,28 @@ border: 1px solid var(--border-modal-input);
 border-radius: 4px;
 transition: border var(--duration) var(--cubic-bezier);
 }
-.form-box {
-  margin-bottom: 10px;
-}
 
-.icon-label {
+
+.form-modal__icon {
   position: absolute;
   top: 50%;
   left: 2%;
 }
 
-.input-modal:hover,
-.input-modal:focus {
+.form-modal__input:hover,
+.form-modal__input:focus {
 border: 1px solid var(--accent-color);
 }
-.textarea-modal:hover,
-.textarea-modal:focus {
+.form-modal__textarea:hover,
+.form-modal__textarea:focus {
 border: 1px solid var(--accent-color);
 }
-.label-modal:hover,
-.label-modal:focus {
+.form-modal__label:hover,
+.form-modal__label:focus {
 fill: var(--accent-color);
 }
-.form-box:focus-within >.icon-label {
-  fill: #2196F3;
-}
-.span-icon {
+
+.form-modal__checkbox-icon {
 display: inline-block;
 width: 16px;
 height: 15px;
@@ -810,12 +806,12 @@ border var(--duration) var(--cubic-bezier);
 
 }
 
-.checkbox:focus +.span-icon,
-.checkbox:hover +.span-icon {
+.form-modal__checkbox:focus +.form-modal__checkbox-icon,
+.form-modal__checkbox:hover +.form-modal__checkbox-icon {
   border: 2px solid var(--accent-color);
   cursor: pointer;
 }
-.checkbox:checked +.span-icon {
+.form-modal__checkbox:checked +.form-modal__checkbox-icon {
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
   background-image: url('../images/icon\ check.svg');
@@ -823,13 +819,12 @@ border var(--duration) var(--cubic-bezier);
   background-origin: border-box;
   
 }
-.conditions-link {
-font-family: Roboto;
+.form-modal__link {
 font-size: 14px;
 line-height: 1.71;
 color: var(--accent-color);
 }
-.label-text {
+.form-modal__label--margin-bottom {
   display: block;
   font-size: 14px;
   line-height: 1.71;
@@ -837,13 +832,13 @@ color: var(--accent-color);
   margin-bottom: 30px;
 }
 
-.backdrop .button-hero {
+.button-hero--background-accent {
   padding: 10px 55px 10px 56px;
  transition: box-shadow var(--duration) var(--cubic-bezier),
  background var(--duration) var(--cubic-bezier);
 }
-.backdrop .button-hero:focus,
-.backdrop .button-hero:hover {
+.button-hero--background-accent:focus,
+.button-hero--background-accent-:hover {
 box-shadow: var(--box-shadow-submit);
 background: #188CE8;
 }
