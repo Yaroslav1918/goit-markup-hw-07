@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./sass/base/_normalize.scss">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header page-header--border-style ">
@@ -51,7 +51,7 @@
     </header>
     <main>
       <!-- Эффективные решения для вашего бизнеса -->
-      <section class=" hero-section hero-section--margin-auto  section">
+      <section class=" hero-section   section">
         <div class="container">
           
           <h1 class="hero-section__hero-text">Эффективные решения 
@@ -117,21 +117,21 @@
         </div>
       </section >
       <!-- Чем мы занимаемся -->
-      <section class="project-section section">
+      <section class="product-section section">
         <div class="container">
         <h2 class="subtitle">Чем мы занимаемся</h2>
-        <ul class="project-section__list">
-          <li class="project-section__item">
-            <img class="project-section__img" src="./images/computer.jpg" alt="компьютер" width="370" />
-            <p class="project-section__text">Десктопные приложения</p>
+        <ul class="product-section__list">
+          <li class="product-section__item">
+            <img class="product-section__img" src="./images/computer.jpg" alt="компьютер" width="370" />
+            <p class="product-section__text">Десктопные приложения</p>
           </li>
-          <li class="project-section__item">
-            <img class="project-section__img" src="./images/phone.jpg" alt="телефон" width="370" />
-            <p class="project-section__text">Мобильные приложения</p>
+          <li class="product-section__item">
+            <img class="product-section__img" src="./images/phone.jpg" alt="телефон" width="370" />
+            <p class="product-section__text">Мобильные приложения</p>
           </li>
-          <li class="project-section__item">
-            <img class="project-section__img" src="./images/tablet.jpg" alt="планшет" width="370" />
-            <p class="project-section__text">Дизайнерские решения</p>
+          <li class="product-section__item">
+            <img class="product-section__img" src="./images/tablet.jpg" alt="планшет" width="370" />
+            <p class="product-section__text">Дизайнерские решения</p>
           </li>
         </ul>
         </div>
@@ -396,7 +396,7 @@
           </li>
             </ul>
       </div>
-      <form action="" class="form-sign form-sign--margin-left">
+      <form action="" class="form-sign footer__form-sign">
       <p class="footer__text"> Подпишитесь на рассылку</p>
       <div class="form-sign__box">
       <input type="email" class="form-sign__input-email" placeholder="E-mail" id="user_email" required />
@@ -445,7 +445,7 @@
      <span class="form-modal__span">Комментарий</span>
     <textarea name="comment" class="form-modal__textarea" placeholder="Введите текст"></textarea>
     </label>
-    <label class="form-modal__label form-modal__label--margin-bottom">
+    <label class="form-modal__label checkbox__label">
     <input type="checkbox" name="license" value="agree" class="form-modal__checkbox visually-hidden" />
       <span class="form-modal__checkbox-icon"></span>
     Соглашаюсь с рассылкой и принимаю <a href="" class="form-modal__link"> Условия договора</a>
